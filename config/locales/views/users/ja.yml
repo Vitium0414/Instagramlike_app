@@ -1,0 +1,11 @@
+# ビューはビューを格納しているフォルダ名を起点にし、ビュー名毎に記述する。
+# インデント(2space)でpathを制御している
+
+ja:
+  users:
+    index:
+      title: 'ユーザ一覧'
+    show:
+      title: '%{user_name}さんのユーザ情報' # 引数の指定もできる。
+    edit:
+      title: '%{user_name}さんのユーザ情報を編集' # view側で t(.titile), user_name: @user.name みたいな感じで設定できる
